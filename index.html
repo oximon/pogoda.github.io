@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/style.css" />
+    <title>Pogoda</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main">
+        <div class="main__top">
+          <input
+            type="text"
+            placeholder="enter your city..."
+						class="main__search-input"
+						id="input"
+          />
+          <div class="main__current-position">
+            <div class="main__icon-location"></div>
+            <p class="main__city" id="city"></p>
+            <p class="main__time" id="time"></p>
+          </div>
+        </div>
+        <div class="main__forecast-weather">
+          <div class="main__current-day">
+            <div class="main__basic-info">
+              <p class="main__temperature" id="current-day"></p>
+              <div
+                class="main__icon-weather main__icon-weather_lg"
+                id="current-day-icon"
+              ></div>
+            </div>
+            <div class="main__minor-info">
+              <p class="main__day-of-week" id="day-of-week"></p>
+              <p class="main__wind-speed" id="wind-speed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/Api.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

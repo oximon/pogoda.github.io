@@ -1,0 +1,107 @@
+.page {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url("../images/bg1.jpg") 50% 50% no-repeat; }
+
+.main {
+  box-sizing: border-box;
+  width: 1160px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 50px 50px 0; }
+
+.main__current-position {
+  display: flex;
+  flex-direction: column;
+  text-align: right; }
+
+.main__icon-location {
+  background: url("../images/geo-white.png") center no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  margin-bottom: 15px; }
+
+.main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 250px; }
+
+.main__city {
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.main__forecast-weather {
+  display: flex; }
+
+.main__search-input {
+  align-self: flex-start;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 40px; }
+
+.main__time {
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.main__basic-info {
+  display: flex; }
+
+.main__minor-info {
+  display: flex;
+  padding-left: 20px; }
+
+.main__temperature {
+  font-size: 122px; }
+
+.main__day-temperature {
+  font-size: 16px;
+  font-weight: bold; }
+
+.main__wind-speed {
+  font-size: 16px;
+  margin-left: 95px;
+  font-weight: bold; }
+
+.main__day-of-week {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.main__icon-weather_lg {
+  width: 150px;
+  height: 150px; }
+
+.main__icon-weather_sm {
+  width: 50px;
+  height: 50px; }
+
+.main__icon-weather {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.main__current-day {
+  flex-grow: 3;
+  padding-bottom: 18px; }
+
+.main__days-of-week {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

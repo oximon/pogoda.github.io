@@ -1,0 +1,26 @@
+@import "../blocks/page/page";
+@import "../blocks/main/main";
+@import "../blocks/common/variables";
+@import "../blocks/main/__current-position/main__current-position";
+@import "../blocks/main/__icon-location/main__icon-location";
+@import "../blocks/main/__top/main__top";
+@import "../blocks/main/__city/main__city";
+@import "../blocks/main/__forecast-weather/main__forecast-weather";
+@import "../blocks/main/__search-input/main__search-input";
+@import "../blocks/main/__time/main__time";
+@import "../blocks/main/__basic-info/main__basic-info";
+@import "../blocks/main/__minor-info/main__minor-info";
+@import "../blocks/main/__temperature/main__temperature";
+@import "../blocks/main/__day-temperature/main__day-temperature";
+@import "../blocks/main/__wind-speed/main__wind-speed";
+@import "../blocks/main/__day-of-week/main__day-of-week";
+@import "../blocks/main/__icon-weather/_lg/main__icon-weather_lg";
+@import "../blocks/main/__icon-weather/_sm/main__icon-weather_sm";
+@import "../blocks/main/__icon-weather/main__icon-weather";
+@import "../blocks/main/__current-day/main__current-day";
+@import "../blocks/main/__days-of-week/main__days-of-week";
+
+* {
+	padding: 0;
+	margin: 0;
+}
