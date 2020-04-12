@@ -1,4 +1,13 @@
 class Weather {
+  constructor(container, city, time, currentDay, icon, dayOfWeek, wind) {
+    this.container = container;
+    this.city = city;
+    this.time = time;
+    this.currentDay = currentDay;
+    this.icon = icon;
+    this.dayOfWeek = dayOfWeek;
+    this.wind = wind;
+  }
   create = ({ day, icon, temp }) => {
     const fragment = document.createDocumentFragment();
     const daysOfWeek = document.createElement("div");
@@ -27,28 +36,18 @@ class Weather {
   };
 
   add = (day, icon, temp) => {
-    return document
-      .querySelector(".main__forecast-for-week")
-      .appendChild(this.create(day, icon, parseInt(temp)));
+    return container.appendChild(this.create(day, icon, parseInt(temp)));
   };
 
   current = ({ name, country, date, temp, icon, wind }) => {
-    document.querySelector("#city").textContent = `${name}, ${country}`;
-    document.querySelector("#time").textContent = new Date(date * 1000)
-      .toString()
-      .slice(0, 15);
-    document.querySelector("#current-day").textContent = `${
-      parseInt(temp) - 273
-    }°`;
-    document
-      .querySelector("#current-day-icon")
-      .setAttribute(
-        "style",
-        `background-image: url('http://openweathermap.org/img/wn/${icon}@2x.png')`
-      );
-    document.querySelector("#day-of-week").textContent = new Date(date * 1000)
-      .toString()
-      .slice(0, 3);
-    document.querySelector("#wind-speed").textContent = `${wind} mph`;
+    this.city.textContent = `${name}, ${country}`;
+    this.time.textContent = new Date(date * 1000).toString().slice(0, 15);
+    this.currentDay.textContent = `${parseInt(temp) - 273}°`;
+    this.icon.setAttribute(
+      "style",
+      `background-image: url('http://openweathermap.org/img/wn/${icon}@2x.png')`
+    );
+    this.dayOfWeek.textContent = new Date(date * 1000).toString().slice(0, 3);
+    this.wind.textContent = `${wind} mph`;
   };
 }
