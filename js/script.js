@@ -20,10 +20,8 @@ if (navigator.geolocation) {
     api
       .getWeatherByCoord([startPos.coords.latitude, startPos.coords.longitude])
       .then((res) => {
-        if (res.ok) {
-          document.querySelector(".main__icon-location").style =
-            "display: block";
-        }
+        document.querySelector(".main__icon-location").style = "display: block";
+
         weather.current({
           name: res.name,
           country: res.sys.country,
@@ -71,10 +69,9 @@ document.addEventListener(
           list.forEach((el) => {
             el.remove();
           });
-          if (res.ok) {
-            document.querySelector(".main__icon-location").style =
-              "display: block";
-          }
+
+          document.querySelector(".main__icon-location").style =
+            "display: block";
 
           weather.current({
             name: res.name,
