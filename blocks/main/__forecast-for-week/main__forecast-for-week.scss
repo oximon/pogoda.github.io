@@ -1,0 +1,11 @@
+.main__forecast-for-week {
+	display: flex;
+
+	@include for-tablet-portait-only {
+		justify-content: center;
+	}
+
+	@include for-phone-only {
+		justify-content: center;
+	}
+}

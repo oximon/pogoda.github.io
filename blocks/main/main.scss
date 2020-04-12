@@ -4,4 +4,11 @@
 	margin: 0 auto;
 	color: #fff;
 	padding: 50px 50px 0;
+	@include for-tablet-portait-only {
+		padding: 25px 25px 0;
+	}
+
+	@include for-phone-only {
+		padding: 0;
+	}
 }

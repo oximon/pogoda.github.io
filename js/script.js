@@ -91,7 +91,7 @@ create = (day, icon, temp) => {
 
 const add = ({ day, icon, temp }) => {
   return document
-    .querySelector(".main__forecast-weather")
+    .querySelector(".main__forecast-for-week")
     .appendChild(create(day, icon, parseInt(temp)));
 };
 

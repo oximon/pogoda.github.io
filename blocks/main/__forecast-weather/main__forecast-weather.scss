@@ -1,3 +1,11 @@
 .main__forecast-weather {
 	display: flex;
+	justify-content: space-between;
+	@include for-tablet-portait-only {
+		flex-direction: column;
+	}
+
+	@include for-phone-only {
+		flex-direction: column;
+	}
 }

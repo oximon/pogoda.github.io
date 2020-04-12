@@ -1,7 +1,17 @@
 .main__days-of-week {
-	flex-grow: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	margin-left: 75px;
+	&:first-child {
+		margin-left: 0;
+	}
+
+	@include for-phone-only {
+		margin-left: 25px;
+	&:first-child {
+		margin-left: 0;
+	}
+	}
 }

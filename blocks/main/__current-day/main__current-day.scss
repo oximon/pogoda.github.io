@@ -1,4 +1,17 @@
 .main__current-day {
-	flex-grow: 3;
 	padding-bottom: 18px;
+	
+	@include for-tablet-portait-only {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
+
+	@include for-phone-only {
+		padding-bottom: 25px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 }

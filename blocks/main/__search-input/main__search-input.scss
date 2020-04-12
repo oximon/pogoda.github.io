@@ -5,4 +5,8 @@
 	outline: none;
 	color: #fff;
 	font-size: 40px;
+	@include for-phone-only {
+		text-align: center;
+		margin-bottom: 50px;
+	}
 }

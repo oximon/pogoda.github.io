@@ -3,4 +3,11 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 250px;
+	@include for-tablet-portait-only {
+		padding-bottom: 50px;
+	}
+	@include for-phone-only {
+		flex-direction: column;
+		padding-bottom: 25px;
+	}
 }

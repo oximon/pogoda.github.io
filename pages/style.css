@@ -12,11 +12,20 @@
   margin: 0 auto;
   color: #fff;
   padding: 50px 50px 0; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .main {
+      padding: 25px 25px 0; } }
+  @media (max-width: 599px) {
+    .main {
+      padding: 0; } }
 
 .main__current-position {
   display: flex;
   flex-direction: column;
   text-align: right; }
+  @media (max-width: 599px) {
+    .main__current-position {
+      text-align: center; } }
 
 .main__icon-location {
   background: url("../images/geo-white.png") center no-repeat;
@@ -25,12 +34,22 @@
   height: 50px;
   align-self: flex-end;
   margin-bottom: 15px; }
+  @media (max-width: 599px) {
+    .main__icon-location {
+      align-self: center; } }
 
 .main__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 250px; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .main__top {
+      padding-bottom: 50px; } }
+  @media (max-width: 599px) {
+    .main__top {
+      flex-direction: column;
+      padding-bottom: 25px; } }
 
 .main__city {
   padding-bottom: 5px;
@@ -38,7 +57,14 @@
   text-transform: uppercase; }
 
 .main__forecast-weather {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .main__forecast-weather {
+      flex-direction: column; } }
+  @media (max-width: 599px) {
+    .main__forecast-weather {
+      flex-direction: column; } }
 
 .main__search-input {
   align-self: flex-start;
@@ -47,6 +73,10 @@
   outline: none;
   color: #fff;
   font-size: 40px; }
+  @media (max-width: 599px) {
+    .main__search-input {
+      text-align: center;
+      margin-bottom: 50px; } }
 
 .main__time {
   font-size: 18px;
@@ -90,15 +120,42 @@
   background-size: contain; }
 
 .main__current-day {
-  flex-grow: 3;
   padding-bottom: 18px; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .main__current-day {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 50px; } }
+  @media (max-width: 599px) {
+    .main__current-day {
+      padding-bottom: 25px;
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
 
 .main__days-of-week {
-  flex-grow: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin-left: 75px; }
+  .main__days-of-week:first-child {
+    margin-left: 0; }
+  @media (max-width: 599px) {
+    .main__days-of-week {
+      margin-left: 25px; }
+      .main__days-of-week:first-child {
+        margin-left: 0; } }
+
+.main__forecast-for-week {
+  display: flex; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .main__forecast-for-week {
+      justify-content: center; } }
+  @media (max-width: 599px) {
+    .main__forecast-for-week {
+      justify-content: center; } }
 
 * {
   padding: 0;
