@@ -36,7 +36,7 @@ class Weather {
   };
 
   add = (day, icon, temp) => {
-    return container.appendChild(this.create(day, icon, parseInt(temp)));
+    return this.container.appendChild(this.create(day, icon, parseInt(temp)));
   };
 
   current = ({ name, country, date, temp, icon, wind }) => {
