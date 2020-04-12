@@ -1,5 +1,6 @@
 .main__current-day {
 	padding-bottom: 18px;
+	flex-grow: 2;
 	
 	@include for-tablet-portait-only {
 		display: flex;

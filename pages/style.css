@@ -57,8 +57,7 @@
   text-transform: uppercase; }
 
 .main__forecast-weather {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   @media (min-width: 600px) and (max-width: 899px) {
     .main__forecast-weather {
       flex-direction: column; } }
@@ -120,7 +119,8 @@
   background-size: contain; }
 
 .main__current-day {
-  padding-bottom: 18px; }
+  padding-bottom: 18px;
+  flex-grow: 2; }
   @media (min-width: 600px) and (max-width: 899px) {
     .main__current-day {
       display: flex;
@@ -138,24 +138,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin-left: 75px; }
-  .main__days-of-week:first-child {
-    margin-left: 0; }
-  @media (max-width: 599px) {
-    .main__days-of-week {
-      margin-left: 25px; }
-      .main__days-of-week:first-child {
-        margin-left: 0; } }
+  align-items: center; }
 
 .main__forecast-for-week {
-  display: flex; }
-  @media (min-width: 600px) and (max-width: 899px) {
-    .main__forecast-for-week {
-      justify-content: center; } }
-  @media (max-width: 599px) {
-    .main__forecast-for-week {
-      justify-content: center; } }
+  display: flex;
+  flex-grow: 3;
+  justify-content: space-around; }
 
 * {
   padding: 0;
